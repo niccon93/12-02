@@ -31,7 +31,7 @@ sudo apt update
 sudo apt install -y mysql-server # задаём пароль 12345 для пользователя root в СУБД MySQL
 sudo systemctl status mysql.service
 ```
-![img](img/1.PNG)
+![img](IMG/1.PNG)
 
 1.2. Создайте учётную запись sys_temp. 
 
@@ -48,7 +48,7 @@ mysql -u root -p
 select User,Host from mysql.user;
 exit
 ```
-![img](img/1-1.PNG)
+![img](IMG/1-1.PNG)
 
 1.4. Дайте все права для пользователя sys_temp. 
 
@@ -66,7 +66,7 @@ mysql -u root -p
 show grants for 'sys_temp'@'%';
 exit
 ```
-![img](img/1-2.PNG)
+![img](IMG/1-2.PNG)
 
 1.6. Переподключитесь к базе данных от имени sys_temp.
 Для смены типа аутентификации с sha2 используйте запрос: 
@@ -114,7 +114,7 @@ use SakilaDB;
 show tables;
 exit
 ```
-![img](img/1-3.PNG)
+![img](IMG/1-3.PNG)
 
 
 ### Задание 2
@@ -176,4 +176,4 @@ mysql -u root -p
 show grants for 'sys_temp'@'%';
 exit
 ```
-![img](img/1-4.PNG)
+![img](IMG/1-4.PNG)
